@@ -8,7 +8,7 @@ class CommandLoader
 {
     public static function loadCommands()
     {
-        // TODO: make autoloader
+        // TODO: make autoloader ?
         $commands = [
             Commands\MakeActionCommand::class,
             Commands\MakeCastCommand::class,
