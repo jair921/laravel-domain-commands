@@ -56,5 +56,5 @@ php artisan vendor:publish --tag="domain-commands-config"
 
 
 ## Thanks
-- https://stitcher.io/blog/laravel-beyond-crud-01-domain-oriented-laravel https://stitcher.io/blog/organise-by-domain
+- https://stitcher.io/blog/laravel-beyond-crud-01-domain-oriented-laravel and https://stitcher.io/blog/organise-by-domain
 - https://github.com/signifly/laravel-domain-commands
