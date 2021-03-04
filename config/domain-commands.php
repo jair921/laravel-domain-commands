@@ -3,7 +3,11 @@
 return [
     'base_controller' => 'App\\Http\\Controllers\\Controller',
 
-    'domain_namespace' => 'Domain\\',
+    'domain' => [
+        'namespace' => 'Domain\\',
+    ],
 
-    'default_app_namespace' => 'App\\',
+    'app' => [
+        'default_namespace' => 'App\\',
+    ],
 ];

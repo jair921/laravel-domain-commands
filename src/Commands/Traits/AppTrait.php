@@ -11,7 +11,7 @@ trait AppTrait
      */
     protected function rootNamespace()
     {
-        return config('domain-commands.default_app_namespace');
+        return config('domain-commands.app.default_amespace');
     }
 
     /**

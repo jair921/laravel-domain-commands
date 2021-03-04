@@ -11,7 +11,7 @@ trait DomainTrait
      */
     protected function rootNamespace()
     {
-        return config('domain-commands.domain_namespace');
+        return config('domain-commands.domain.namespace');
     }
 
     /**

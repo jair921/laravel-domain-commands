@@ -10,7 +10,7 @@ class NamespaceResolver
 
     public static function resolveDomainNamespace(string $name, string $type)
     {
-        $domainNamespace = config('domain-commands.domain_namespace');
+        $domainNamespace = config('domain-commands.domain.namespace');
 
         [$domain, $class] = \explode(':', $name);
 
