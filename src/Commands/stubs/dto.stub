@@ -1,0 +1,9 @@
+<?php
+
+namespace {{ namespace }};
+
+use Spatie\DataTransferObject\DataTransferObject;
+
+final class {{ class }} extends DataTransferObject
+{
+}

@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+use Spatie\ViewModels\ViewModel;
+
+class {{ class }} extends ViewModel
+{
+    /**
+     * Create the view model.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+    }
+}
