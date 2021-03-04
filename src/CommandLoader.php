@@ -17,6 +17,7 @@ class CommandLoader
             Commands\MakeControllerCommand::class,
             Commands\MakeDTOCommand::class,
             Commands\MakeEventCommand::class,
+            Commands\MakeFactoryCommand::class,
             Commands\MakeJobCommand::class,
             Commands\MakeListenerCommand::class,
             Commands\MakeMailCommand::class,

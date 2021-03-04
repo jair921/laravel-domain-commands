@@ -51,7 +51,7 @@ class MakeModelCommand extends \Illuminate\Foundation\Console\ModelMakeCommand
 
         $this->call('make:factory', [
             'name' => "{$factory}Factory",
-            '--model' => $this->qualifyClass($this->getNameInput()),
+            '--model' => $this->argument('name'),
         ]);
     }
 
