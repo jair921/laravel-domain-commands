@@ -55,8 +55,14 @@ class MakeListenerCommand extends \Illuminate\Foundation\Console\ListenerMakeCom
 
         $eventNamespace = NamespaceResolver::resolveDomainNamespace(
             $this->option('event'),
-            NamespaceResolver::LISTENER
+            NamespaceResolver::EVENT
         );
+
+        if (!class_exists($eventNamespace)) {
+            if ($this->confirm("A {$eventNamespace} event does not exist. Do you want to generate it?", true)) {
+                $this->call('make:event', ['name' => $this->option('event')]);
+            }
+        }
 
         $stub = str_replace(['{{ eventNamespace }}', '{{eventNamespace}}'], $eventNamespace, $stub);
 

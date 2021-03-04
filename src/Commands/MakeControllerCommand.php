@@ -9,7 +9,7 @@ class MakeControllerCommand extends \Illuminate\Routing\Console\ControllerMakeCo
 {
     use AppTrait;
 
-    private string $appSubFolder = 'Controller';
+    private string $appSubFolder = 'Controllers';
 
     /**
      * Replace the namespace for the given stub.
@@ -81,7 +81,7 @@ class MakeControllerCommand extends \Illuminate\Routing\Console\ControllerMakeCo
             NamespaceResolver::MODEL
         );
 
-        if (!\file_exists($modelClass)) {
+        if (!class_exists($modelClass)) {
             if ($this->confirm("A {$modelClass} model does not exist. Do you want to generate it?", true)) {
                 $this->call('make:model', ['name' => $this->option('model')]);
             }
