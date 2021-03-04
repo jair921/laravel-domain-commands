@@ -4,7 +4,7 @@ namespace Notiv\Console\Commands;
 
 use Notiv\Console\Commands\Traits\AppTrait;
 
-class MakeResourceCommand extends \Illuminate\Console\GeneratorCommand
+class MakeViewModelCommand extends \Illuminate\Console\GeneratorCommand
 {
     use AppTrait;
 

@@ -4,7 +4,7 @@ namespace Notiv\Console\Commands;
 
 use Notiv\Console\Commands\Traits\AppTrait;
 
-class MakeRequestCommand extends \Illuminate\Foundation\Console\MailMakeCommand
+class MakeMailCommand extends \Illuminate\Foundation\Console\MailMakeCommand
 {
     use AppTrait;
 
