@@ -1,0 +1,30 @@
+{
+  "name": "notiv/laravel-domain-commands",
+  "description": "Artisan commands to Laravel apps that utilizes Domain Driven Design.",
+  "homepage": "https://github.com/notiv-nt/laravel-domain-commands",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Notiv\\Console\\": "src"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Notiv\\Console\\DomainServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "laravel/framework": "^8.30"
+  }
+}
