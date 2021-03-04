@@ -3,6 +3,7 @@
 namespace Notiv\Console\Commands;
 
 use Notiv\Console\Commands\Traits\DomainTrait;
+use Symfony\Component\Console\Input\InputOption;
 
 class MakeDTOCommand extends \Illuminate\Console\GeneratorCommand
 {
@@ -38,6 +39,20 @@ class MakeDTOCommand extends \Illuminate\Console\GeneratorCommand
      */
     protected function getStub()
     {
-        return $this->resolveStubPath('/stubs/dto.stub');
+        return $this->option('request')
+            ? $this->resolveStubPath('/stubs/dto-request.stub')
+            : $this->resolveStubPath('/stubs/dto.stub');
+    }
+
+    /**
+     * Get the console command options.
+     *
+     * @return array
+     */
+    protected function getOptions()
+    {
+        return [
+            ['request', 'r', InputOption::VALUE_NONE, 'DTO file with static fromRequest method'],
+        ];
     }
 }

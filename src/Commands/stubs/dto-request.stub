@@ -1,0 +1,15 @@
+<?php
+
+namespace {{ namespace }};
+
+use Spatie\DataTransferObject\DataTransferObject;
+
+final class {{ class }} extends DataTransferObject
+{
+    public static function fromRequest(Request $request): self
+    {
+        return new self([
+            'name' => $request->input('name'),
+        ]);
+    }
+}
