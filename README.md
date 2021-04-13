@@ -53,6 +53,7 @@ php artisan vendor:publish --tag="domain-commands-config"
 - `make:model --auth` ?
 - `make:state [domain:name]`
 - `make:{http query builder} [app:name]`
+- `make:enum`
 
 
 ## Thanks
