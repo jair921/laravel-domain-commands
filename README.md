@@ -265,7 +265,7 @@ php artisan vendor:publish --tag="domain-commands-config"
 
 - **ADD TESTS**
 - `make:model --auth` ?
-- `make:state [domain:name]`
+- `make:state [domain:name]` https://stitcher.io/blog/laravel-beyond-crud-05-states
 - `make:{http query builder} [app:name]`
 
 ## Thanks
