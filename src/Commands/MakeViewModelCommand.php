@@ -20,7 +20,7 @@ class MakeViewModelCommand extends \Illuminate\Console\GeneratorCommand
      *
      * @var string
      */
-    protected $description = 'Create an action for a given app';
+    protected $description = 'Create a view-model for a given app';
 
     /**
      * The type of class being generated.
