@@ -101,6 +101,12 @@ php artisan vendor:publish --tag="domain-commands-config"
 
   _Example:_ `php artisan make:event User:UserCreatedEvent`
 
+- `make:enum <domain:enum>`
+
+  Create an enum for a given domain
+
+  _Example:_ `php artisan make:enum User:UserColorEnum`
+
 - `make:listener <domain:listener>`
 
   Create a new event listener class
