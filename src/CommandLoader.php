@@ -31,6 +31,7 @@ class CommandLoader
             Commands\MakeResourceCommand::class,
             Commands\MakeRuleCommand::class,
             Commands\MakeViewModelCommand::class,
+            Commands\MakeEnumCommand::class,
         ];
 
         Application::starting(function ($artisan) use ($commands) {
