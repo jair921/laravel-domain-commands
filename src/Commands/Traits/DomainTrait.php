@@ -1,6 +1,6 @@
 <?php
 
-namespace Notiv\Console\Commands\Traits;
+namespace Jair921\Console\Commands\Traits;
 
 trait DomainTrait
 {

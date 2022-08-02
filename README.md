@@ -3,43 +3,7 @@
 # Installation
 
 ```
-composer require notiv/laravel-domain-commands
-```
-
-Add `CommandLoader::loadCommands()` to `app/Console/Kernel.php`
-
-```diff
-<?php
-
-...
-+use Notiv\Console\CommandLoader;
-
-class Kernel extends ConsoleKernel
-{
-    protected function commands()
-    {
-        $this->load(__DIR__ . '/Commands');
-
-+       CommandLoader::loadCommands();
-
-        require base_path('routes/console.php');
-    }
-}
-```
-
-> _Not a good solution, but i don't know how else I can register commands after everything_
-
-Add `"Domain\\": "app/Domain/"` to `composer.json`
-
-```diff
-"autoload": {
-  "psr-4": {
-      "App\\": "app/",
-+     "Domain\\": "app/Domain/",
-      "Database\\Factories\\": "database/factories/",
-      "Database\\Seeders\\": "database/seeders/"
-  }
-},
+composer require jair921/laravel-domain-commands
 ```
 
 You can publish config, if you want

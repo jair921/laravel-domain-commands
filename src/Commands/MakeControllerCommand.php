@@ -1,9 +1,9 @@
 <?php
 
-namespace Notiv\Console\Commands;
+namespace Jair921\Console\Commands;
 
-use Notiv\Console\Commands\Helpers\NamespaceResolver;
-use Notiv\Console\Commands\Traits\AppTrait;
+use Jair921\Console\Commands\Helpers\NamespaceResolver;
+use Jair921\Console\Commands\Traits\AppTrait;
 
 class MakeControllerCommand extends \Illuminate\Routing\Console\ControllerMakeCommand
 {

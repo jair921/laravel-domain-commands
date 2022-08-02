@@ -1,8 +1,8 @@
 <?php
 
-namespace Notiv\Console\Commands;
+namespace Jair921\Console\Commands;
 
-use Notiv\Console\Commands\Traits\DomainTrait;
+use Jair921\Console\Commands\Traits\DomainTrait;
 use Symfony\Component\Console\Input\InputOption;
 
 class MakeDTOCommand extends \Illuminate\Console\GeneratorCommand

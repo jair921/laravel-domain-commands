@@ -1,9 +1,9 @@
 <?php
 
-namespace Notiv\Console\Commands;
+namespace Jair921\Console\Commands;
 
 use Illuminate\Support\Str;
-use Notiv\Console\Commands\Traits\DomainTrait;
+use Jair921\Console\Commands\Traits\DomainTrait;
 use Symfony\Component\Console\Input\InputOption;
 
 class MakeModelCommand extends \Illuminate\Foundation\Console\ModelMakeCommand

@@ -1,6 +1,6 @@
 <?php
 
-namespace Notiv\Console\Commands\Helpers;
+namespace Jair921\Console\Commands\Helpers;
 
 class NamespaceResolver
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Notiv\Console\Commands;
+namespace Jair921\Console\Commands;
 
-use Notiv\Console\Commands\Helpers\NamespaceResolver;
-use Notiv\Console\Commands\Traits\DomainTrait;
+use Jair921\Console\Commands\Helpers\NamespaceResolver;
+use Jair921\Console\Commands\Traits\DomainTrait;
 
 class MakeObserverCommand extends \Illuminate\Foundation\Console\ObserverMakeCommand
 {

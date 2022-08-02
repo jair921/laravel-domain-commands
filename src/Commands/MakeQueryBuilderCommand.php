@@ -1,8 +1,8 @@
 <?php
 
-namespace Notiv\Console\Commands;
+namespace Jair921\Console\Commands;
 
-use Notiv\Console\Commands\Traits\DomainTrait;
+use Jair921\Console\Commands\Traits\DomainTrait;
 
 class MakeQueryBuilderCommand extends \Illuminate\Console\GeneratorCommand
 {

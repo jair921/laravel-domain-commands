@@ -1,6 +1,6 @@
 <?php
 
-namespace Notiv\Console;
+namespace Jair921\Console;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,5 +15,7 @@ class DomainServiceProvider extends ServiceProvider
         }
 
         $this->mergeConfigFrom(__DIR__ . '/../config/domain-commands.php', 'domain-commands');
+
+        $this->commands(CommandLoader::loadCommands());
     }
 }

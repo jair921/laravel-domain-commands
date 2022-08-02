@@ -1,9 +1,9 @@
 <?php
 
-namespace Notiv\Console\Commands;
+namespace Jair921\Console\Commands;
 
 use Illuminate\Support\Str;
-use Notiv\Console\Commands\Traits\AppTrait;
+use Jair921\Console\Commands\Traits\AppTrait;
 
 class MakeComponentCommand extends \Illuminate\Foundation\Console\ComponentMakeCommand
 {

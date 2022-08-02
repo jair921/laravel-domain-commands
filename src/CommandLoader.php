@@ -1,16 +1,15 @@
 <?php
 
-namespace Notiv\Console;
+namespace Jair921\Console;
 
 use Illuminate\Console\Application;
 
 class CommandLoader
 {
-    public static function loadCommands()
+    public static function loadCommands(): array
     {
-        // TODO: make autoloader ?
-        $commands = [
-            Commands\MakeActionCommand::class,
+        return [
+            Commands\MakeDomainCommand::class,
             Commands\MakeCastCommand::class,
             Commands\MakeCollectionCommand::class,
             Commands\MakeComponentCommand::class,
@@ -33,11 +32,5 @@ class CommandLoader
             Commands\MakeViewModelCommand::class,
             Commands\MakeEnumCommand::class,
         ];
-
-        Application::starting(function ($artisan) use ($commands) {
-            foreach ($commands as $command) {
-                $artisan->resolve($command);
-            }
-        });
     }
 }

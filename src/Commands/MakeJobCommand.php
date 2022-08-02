@@ -1,8 +1,8 @@
 <?php
 
-namespace Notiv\Console\Commands;
+namespace Jair921\Console\Commands;
 
-use Notiv\Console\Commands\Traits\AppTrait;
+use Jair921\Console\Commands\Traits\AppTrait;
 
 class MakeJobCommand extends \Illuminate\Foundation\Console\JobMakeCommand
 {

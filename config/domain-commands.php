@@ -4,7 +4,7 @@ return [
     'base_controller' => 'App\\Http\\Controllers\\Controller',
 
     'domain' => [
-        'namespace' => 'Domain\\',
+        'namespace' => 'App\\Domain\\',
     ],
 
     'app' => [
