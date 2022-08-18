@@ -23,7 +23,8 @@ trait AppTrait
      */
     protected function getPath($name)
     {
-        return $this->laravel['path'] . '/' . str_replace('\\', '/', $name) . '.php';
+        //return $this->laravel['path'] . '/' . str_replace('\\', '/', $name) . '.php';
+        return config('domain-commands.path') . '/' . str_replace('\\', '/', $name) . '.php';
     }
 
     /**

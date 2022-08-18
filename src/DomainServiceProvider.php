@@ -12,10 +12,10 @@ class DomainServiceProvider extends ServiceProvider
             $this->publishes([
                 __DIR__ . '/../config/domain-commands.php' => config_path('domain-commands.php'),
             ], 'domain-commands-config');
+
+            $this->commands(CommandLoader::loadCommands());
         }
 
         $this->mergeConfigFrom(__DIR__ . '/../config/domain-commands.php', 'domain-commands');
-
-        $this->commands(CommandLoader::loadCommands());
     }
 }

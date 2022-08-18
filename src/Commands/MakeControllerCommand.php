@@ -9,6 +9,13 @@ class MakeControllerCommand extends \Illuminate\Routing\Console\ControllerMakeCo
 {
     use AppTrait;
 
+    /**
+     * The console command name.
+     *
+     * @var string
+     */
+    protected $name = 'make:controller-domain';
+
     private string $appSubFolder = 'Controllers';
 
     /**

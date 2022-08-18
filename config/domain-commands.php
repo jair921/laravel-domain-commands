@@ -10,4 +10,6 @@ return [
     'app' => [
         'default_namespace' => 'App\\',
     ],
+
+    'path' => app_path('Domain' ),
 ];

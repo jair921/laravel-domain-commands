@@ -10,6 +10,7 @@ class CommandLoader
     {
         return [
             Commands\MakeDomainCommand::class,
+            Commands\MakeDomainCrud::class,
             Commands\MakeCastCommand::class,
             Commands\MakeCollectionCommand::class,
             Commands\MakeComponentCommand::class,

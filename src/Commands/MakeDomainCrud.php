@@ -26,7 +26,14 @@ class MakeDomainCrud extends Command
     {
         $entity = $this->argument('Entity');
         $this->call('make:domain', ['domain' => $entity]);
-        $this->call('make:model', ['domain' => $entity]);
+        $this->call("make:model {$entity}:{$entity}");
+        $this->call("make:dto {$entity}:{$entity}Data");
+
+        $this->call("make:action {$entity}:Create{$entity}Action");
+        $this->call("make:action {$entity}:Destroy{$entity}Action");
+        $this->call("make:action {$entity}:Update{$entity}Action");
+
+        $this->call("make:query-builder {$entity}:{$entity}QueryBuilder");
     }
 
     private function buildPath(): string

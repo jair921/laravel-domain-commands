@@ -26,13 +26,13 @@ class MakeDomainCommand extends Command
     {
         $path = $this->buildPath();
 
-        if (! $files->isDirectory(dirname($path))) {
-            $files->makeDirectory(dirname($path), 0744, true, true);
+        if (! $files->isDirectory($path)) {
+            $files->makeDirectory($path, 0644, true, true);
         }
     }
 
     private function buildPath(): string
     {
-        return app_path('Domain' . DIRECTORY_SEPARATOR . $this->argument('domain'));
+        return app_path('Domain' ) . DIRECTORY_SEPARATOR . $this->argument('domain');
     }
 }
